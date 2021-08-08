@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/jpg" href="img/favicon.svg"/>
+        <title>Formulario de Contacto</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+
+        <h1>Contacta con Nosotros</h1>
+        <div>
+            <form action="/FormularioContacto/ServletControlador" method="post" onsubmit="return validar()">
+                <h2>Formulario de Contacto</h2>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="30">
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" maxlength="50">
+                <input type="email" id="correo" name="correo" placeholder="E-mail" maxlength="100">
+                <input type="tel" id="tel" name="telefono" placeholder="Telefono" maxlength="20">
+                <textarea name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje" maxlength="500"></textarea>
+                <input type="submit" value="Enviar" id="boton">
+                <div id="error"></div>
+            </form>       
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
